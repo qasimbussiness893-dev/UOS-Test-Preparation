@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindh Uni. 2k27 Entry Preparation by SSS Org.</title>
+<style>
+  :root{
+    --red:#a3121f;
+    --red-deep:#6e0c15;
+    --red-bright:#e63946;
+    --gold:#f2c14e;
+    --gold-light:#f7d878;
+    --green:#1f8a4c;
+    --green-light:#27ae60;
+    --wrong:#c62828;
+    --wrong-light:#e74c3c;
+    --paper:#fffaf8;
+    --ink:#2a1416;
+    --ink-soft:#6b4a4d;
+    --line:#f0d9d4;
+    --shadow: 0 10px 30px rgba(110,12,21,0.14);
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  body{
+    font-family:'Segoe UI', 'Trebuchet MS', Tahoma, sans-serif;
+    background: radial-gradient(circle at 20% 0%, #fdf0ee 0%, #fce6e3 35%, #f9dbd6 100%);
+    background-attachment:fixed;
+    color:var(--ink);
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+    background-image:
+      radial-gradient(circle, rgba(163,18,31,0.04) 1px, transparent 1px);
+    background-size:22px 22px;
+  }
+
+  /* ===== Top Banner ===== */
+  .banner{
+    background: linear-gradient(135deg, var(--red) 0%, var(--red-deep) 100%);
+    color:#fff;
+    text-align:center;
+    padding: 30px 20px 36px;
+    position:relative;
+    overflow:hidden;
+    border-bottom: 4px solid var(--gold);
+    box-shadow: 0 2px 0 var(--gold-light) inset;
+  }
+  .banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(circle at 10% 20%, rgba(242,193,78,0.14) 0, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(242,193,78,0.12) 0, transparent 40%);
+    pointer-events:none;
+  }
+  .logo-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+    margin-bottom:12px;
+    flex-wrap:wrap;
+  }
+  .logo-slot{
+    position:relative;
+    display:inline-flex;
+    height:72px;
+    width:72px;
+  }
+  .logo-row img{
+    height:72px;
+    width:72px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:6px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    animation: dropIn 0.7s ease both;
+  }
+  .logo-slot:nth-child(2) img,
+  .logo-slot:nth-child(2) .logo-placeholder{ animation-delay:0.15s; }
+  .logo-placeholder{
+    height:72px;
+    width:72px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    border:2px dashed rgba(255,255,255,0.5);
+    align-items:center;
+    justify-content:center;
+    font-size:0.62rem;
+    font-weight:700;
+    color:rgba(255,255,255,0.85);
+    text-align:center;
+    line-height:1.2;
+    padding:4px;
+    animation: dropIn 0.7s ease both;
+  }
+
+  @keyframes dropIn{
+    from{ opacity:0; transform:translateY(-22px) scale(0.85); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+
+  .test-name{
+    font-size:clamp(1.15rem, 3.6vw, 1.7rem);
+    font-weight:800;
+    letter-spacing:0.3px;
+    text-shadow:0 2px 10px rgba(0,0,0,0.3);
+    animation: fadeUp 0.7s ease 0.2s both;
+    line-height:1.35;
+    padding:0 6px;
+  }
+  .org-title{
+    font-size:clamp(0.95rem, 2.6vw, 1.15rem);
+    font-weight:700;
+    color:var(--gold-light);
+    margin-top:8px;
+    animation: fadeUp 0.7s ease 0.3s both;
+  }
+  .org-sub{
+    margin-top:6px;
+    font-size:0.85rem;
+    color:#f5dede;
+    font-weight:500;
+    letter-spacing:0.3px;
+    animation: fadeUp 0.7s ease 0.4s both;
+  }
+
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  /* ===== Container ===== */
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:24px 18px 60px;
+  }
+
+  /* ===== Card base ===== */
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+
+  /* ===== Landing / Info screen ===== */
+  #screen-landing{
+    margin-top:-22px;
+    padding:26px 22px 30px;
+    text-align:center;
+    animation: fadeUp 0.6s ease both;
+  }
+  .meta-row{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+    margin:18px 0 20px;
+  }
+  .pill{
+    background: linear-gradient(135deg, #fdeeea, #fbdcd4);
+    color:var(--red);
+    border:1px solid #f3c4b8;
+    font-weight:700;
+    font-size:0.8rem;
+    padding:7px 14px;
+    border-radius:999px;
+  }
+  .timer-chip{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background: linear-gradient(135deg, var(--wrong-light), var(--wrong));
+    color:#fff;
+    font-weight:800;
+    padding:10px 22px;
+    border-radius:999px;
+    font-size:1rem;
+    box-shadow:0 6px 16px rgba(198,40,40,0.35);
+    margin-bottom:6px;
+  }
+  .landing-note{
+    color:var(--ink-soft);
+    font-size:0.9rem;
+    margin-top:4px;
+    line-height:1.55;
+  }
+  .qcount-badge{
+    display:inline-block;
+    background:var(--red);
+    color:#fff;
+    font-weight:800;
+    font-size:0.78rem;
+    padding:5px 14px;
+    border-radius:999px;
+    margin-top:10px;
+    letter-spacing:0.3px;
+  }
+
+  /* ===== Form ===== */
+  .form-group{
+    text-align:left;
+    margin:14px 0;
+  }
+  .form-group label{
+    display:block;
+    font-weight:700;
+    font-size:0.85rem;
+    color:var(--red);
+    margin-bottom:6px;
+  }
+  .form-group input{
+    width:100%;
+    padding:13px 14px;
+    border:2px solid var(--line);
+    border-radius:10px;
+    font-size:1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family:inherit;
+    background:#fff;
+  }
+  .form-group input:focus{
+    outline:none;
+    border-color:var(--red);
+    box-shadow:0 0 0 3px rgba(163,18,31,0.12);
+  }
+  .err-msg{
+    color:var(--wrong);
+    font-size:0.78rem;
+    margin-top:5px;
+    min-height:1em;
+    font-weight:600;
+  }
+
+  .btn-primary{
+    background: linear-gradient(135deg, var(--red), var(--red-deep));
+    color:#fff;
+    border:none;
+    padding:15px 36px;
+    font-size:1.02rem;
+    font-weight:800;
+    border-radius:12px;
+    cursor:pointer;
+    letter-spacing:0.3px;
+    box-shadow:0 8px 20px rgba(163,18,31,0.3);
+    transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+    width:100%;
+    margin-top:6px;
+  }
+  .btn-primary:hover{ transform:translateY(-2px); filter:brightness(1.08); box-shadow:0 12px 26px rgba(163,18,31,0.38); }
+  .btn-primary:active{ transform:translateY(0); }
+  .btn-primary:disabled{
+    opacity:0.55;
+    cursor:not-allowed;
+    transform:none;
+  }
+
+  /* ===== Sticky Timer Bar (during test) ===== */
+  #screen-test{ display:none; }
+  .test-topbar{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:linear-gradient(135deg, #fff, #fdf4f2);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:12px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    box-shadow:var(--shadow);
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .candidate-chip{
+    font-size:0.82rem;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+  .candidate-chip b{ color:var(--red); }
+  #timer-display{
+    font-weight:800;
+    font-size:1.1rem;
+    color:#fff;
+    background:linear-gradient(135deg, var(--wrong-light), var(--wrong));
+    padding:8px 18px;
+    border-radius:999px;
+    box-shadow:0 4px 12px rgba(198,40,40,0.3);
+    min-width:92px;
+    text-align:center;
+  }
+  #timer-display.low{
+    animation: pulseRed 1s infinite;
+  }
+  @keyframes pulseRed{
+    0%,100%{ box-shadow:0 4px 12px rgba(198,40,40,0.3); }
+    50%{ box-shadow:0 4px 26px rgba(198,40,40,0.75); }
+  }
+
+  /* ===== Section header ===== */
+  .subject-section{
+    margin-bottom:28px;
+  }
+  .subject-header{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background: linear-gradient(135deg, var(--red), var(--red-deep));
+    color:#fff;
+    padding:13px 18px;
+    border-radius:14px 14px 0 0;
+    font-weight:800;
+    font-size:1.02rem;
+    letter-spacing:0.3px;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  .subject-header::after{
+    content:"";
+    position:absolute;
+    right:0; top:0; bottom:0;
+    width:6px;
+    background:var(--gold);
+  }
+  .subject-count{
+    margin-left:auto;
+    font-size:0.74rem;
+    background:rgba(255,255,255,0.18);
+    padding:4px 10px;
+    border-radius:999px;
+    font-weight:700;
+    flex-shrink:0;
+  }
+  .questions-box{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-top:none;
+    border-radius:0 0 14px 14px;
+    padding:6px 18px 8px;
+    box-shadow:var(--shadow);
+  }
+
+  /* ===== Question card ===== */
+  .q-card{
+    padding:18px 0 20px;
+    border-bottom:1px dashed var(--line);
+    opacity:0;
+    transform:translateY(14px);
+    animation: qReveal 0.5s ease forwards;
+  }
+  .q-card:last-child{ border-bottom:none; }
+  @keyframes qReveal{
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .q-label{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    margin-bottom:10px;
+  }
+  .q-num{
+    color:#fff;
+    background:var(--red);
+    font-weight:800;
+    font-size:0.74rem;
+    padding:3px 9px;
+    border-radius:7px;
+    flex-shrink:0;
+  }
+  .q-text{
+    font-weight:700;
+    font-size:0.98rem;
+    color:var(--ink);
+    line-height:1.4;
+  }
+  .options{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+  }
+  .option{
+    border:2px solid var(--line);
+    background:#fff;
+    border-radius:10px;
+    padding:11px 15px;
+    font-size:0.92rem;
+    color:var(--ink);
+    cursor:pointer;
+    transition: border-color 0.15s, background 0.15s, transform 0.12s, box-shadow 0.15s;
+    user-select:none;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .option:hover{
+    border-color:var(--red);
+    background:#fdf3f1;
+    transform:translateX(3px);
+  }
+  .option::after{
+    content:"";
+    font-size:0.92rem;
+    opacity:0;
+  }
+  .option.selected-correct::after{ content:"✓"; opacity:1; font-weight:800; }
+  .option.selected-wrong::after{ content:"✗"; opacity:1; font-weight:800; }
+  .option.reveal-correct::after{ content:"✓"; opacity:1; font-weight:800; }
+  .option.selected-correct,
+  .option.selected-wrong,
+  .option.reveal-correct{
+    transform:translateX(0);
+  }
+  .option.selected-correct{
+    background: linear-gradient(135deg, var(--green-light), var(--green));
+    color:#fff;
+    border-color:var(--green);
+    font-weight:700;
+    animation: popCorrect 0.35s ease;
+  }
+  .option.selected-wrong{
+    background: linear-gradient(135deg, var(--wrong-light), var(--wrong));
+    color:#fff;
+    border-color:var(--wrong);
+    font-weight:700;
+    animation: shake 0.4s ease;
+  }
+  .option.reveal-correct{
+    border-color:var(--green);
+    background:#eafaf0;
+    color:var(--green);
+    font-weight:700;
+  }
+  .option.locked{
+    cursor:not-allowed;
+    transform:none !important;
+  }
+  .option.locked:hover{
+    transform:none;
+    background:inherit;
+  }
+  .option.dimmed{
+    opacity:0.5;
+  }
+  @keyframes popCorrect{
+    0%{ transform:scale(0.96); }
+    60%{ transform:scale(1.02); }
+    100%{ transform:scale(1); }
+  }
+  @keyframes shake{
+    0%,100%{ transform:translateX(0); }
+    25%{ transform:translateX(-5px); }
+    75%{ transform:translateX(5px); }
+  }
+
+  /* ===== Submit area ===== */
+  .submit-area{
+    text-align:center;
+    margin-top:16px;
+  }
+  .progress-track{
+    height:10px;
+    background:#f3d9d4;
+    border-radius:999px;
+    overflow:hidden;
+    margin-bottom:18px;
+  }
+  .progress-fill{
+    height:100%;
+    background:linear-gradient(90deg, var(--gold), var(--red));
+    width:0%;
+    transition: width 0.4s ease;
+    border-radius:999px;
+  }
+  .progress-label{
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    margin-bottom:14px;
+    font-weight:600;
+  }
+
+  /* ===== Result Screen ===== */
+  #screen-result{ display:none; text-align:center; animation: fadeUp 0.6s ease both; }
+  .result-hero{
+    padding:32px 22px 24px;
+  }
+  .score-ring{
+    width:140px; height:140px;
+    margin:0 auto 16px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: conic-gradient(var(--green) calc(var(--pct) * 1%), #f3d9d4 0);
+    position:relative;
+    animation: ringGrow 1s ease both;
+  }
+  @keyframes ringGrow{
+    from{ transform:scale(0.7) rotate(-90deg); opacity:0; }
+    to{ transform:scale(1) rotate(0); opacity:1; }
+  }
+  .score-ring-inner{
+    width:110px; height:110px;
+    background:var(--paper);
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .score-ring-inner .big{
+    font-size:1.65rem;
+    font-weight:800;
+    color:var(--red);
+  }
+  .score-ring-inner .small{
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+  .result-name{
+    font-size:1.15rem;
+    font-weight:800;
+    color:var(--red);
+    margin-bottom:2px;
+  }
+  .result-district{
+    color:var(--ink-soft);
+    font-size:0.88rem;
+    margin-bottom:18px;
+  }
+  .breakdown{
+    text-align:left;
+    margin-top:18px;
+    padding:0 22px 26px;
+  }
+  .breakdown-title{
+    font-weight:800;
+    color:var(--red);
+    margin-bottom:14px;
+    font-size:0.98rem;
+    border-bottom:2px solid var(--gold);
+    padding-bottom:8px;
+  }
+  .breakdown-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .breakdown-row:last-child{ border-bottom:none; }
+  .breakdown-subject{
+    flex:1;
+    font-weight:700;
+    font-size:0.9rem;
+  }
+  .breakdown-bar-track{
+    flex:2;
+    height:9px;
+    background:#f3d9d4;
+    border-radius:999px;
+    overflow:hidden;
+  }
+  .breakdown-bar-fill{
+    height:100%;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--gold), var(--green));
+    width:0%;
+    transition: width 1s ease 0.2s;
+  }
+  .breakdown-score{
+    font-size:0.82rem;
+    font-weight:700;
+    color:var(--ink-soft);
+    min-width:42px;
+    text-align:right;
+  }
+
+  .recorded-banner{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background: linear-gradient(135deg, #eafaf0, #d8f3e3);
+    border:1.5px solid var(--green);
+    border-radius:0 0 16px 16px;
+    padding:16px 22px;
+    margin-top:4px;
+    text-align:left;
+  }
+  .recorded-icon{
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:var(--green);
+    color:#fff;
+    font-weight:800;
+    font-size:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .recorded-banner span:last-child{
+    font-size:0.85rem;
+    font-weight:700;
+    color:var(--green);
+    line-height:1.5;
+  }
+
+  footer{
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:0.76rem;
+    padding:18px;
+    opacity:0.75;
+  }
+
+  @media (max-width:480px){
+    .logo-row{ gap:16px; margin-bottom:10px; }
+    .logo-slot{ height:54px; width:54px; }
+    .logo-row img{ height:54px; width:54px; }
+    .logo-placeholder{ height:54px; width:54px; font-size:0.52rem; }
+    .test-name{ font-size:1.05rem; }
+    .org-title{ font-size:0.88rem; }
+    .org-sub{ font-size:0.76rem; }
+    .banner{ padding:22px 12px 26px; }
+    .wrap{ padding:16px 10px 50px; }
+    #screen-landing{ padding:20px 14px 24px; }
+    .timer-chip{ font-size:0.85rem; padding:9px 16px; }
+    .pill{ font-size:0.72rem; padding:6px 11px; }
+    .btn-primary{ padding:14px 22px; font-size:0.96rem; }
+    .test-topbar{ padding:10px 12px; flex-direction:column; align-items:stretch; }
+    .candidate-chip{ text-align:center; font-size:0.76rem; }
+    #timer-display{ width:100%; font-size:1rem; }
+    .subject-header{ padding:11px 13px; font-size:0.92rem; }
+    .questions-box{ padding:4px 11px 6px; }
+    .q-card{ padding:14px 0 16px; }
+    .q-text{ font-size:0.9rem; }
+    .option{ padding:12px 13px; font-size:0.87rem; -webkit-tap-highlight-color:transparent; }
+    .score-ring{ width:122px; height:122px; }
+    .score-ring-inner{ width:96px; height:96px; }
+    .score-ring-inner .big{ font-size:1.4rem; }
+    .breakdown{ padding:0 14px 20px; }
+    .breakdown-row{ flex-wrap:wrap; gap:6px; }
+    .breakdown-bar-track{ flex-basis:100%; order:3; }
+  }
+
+  @media (max-width:360px){
+    .test-name{ font-size:0.95rem; }
+    .logo-slot{ height:46px; width:46px; }
+    .logo-row img{ height:46px; width:46px; }
+    .logo-placeholder{ height:46px; width:46px; font-size:0.46rem; }
+    .meta-row{ gap:6px; }
+    .pill{ font-size:0.68rem; padding:5px 10px; }
+  }
+
+  @media (hover:none) and (pointer:coarse){
+    .option{ padding:13px 15px; }
+    .btn-primary{ padding:16px 28px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="logo-row">
+      <!-- University of Sindh logo: place your image file named "sindh-university-logo.png" next to this index.html -->
+      <span class="logo-slot">
+        <img src="sindh-university-logo.png" alt="University of Sindh Logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="logo-placeholder" style="display:none;">UOS<br>LOGO</span>
+      </span>
+      <!-- SSS Organisation logo: place your image file named "sss-org-logo.png" next to this index.html -->
+      <span class="logo-slot">
+        <img src="sss-org-logo.png" alt="SSS Organisation Logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="logo-placeholder" style="display:none;">SSS ORG<br>LOGO</span>
+      </span>
+    </div>
+    <div class="test-name">Sindh Uni. 2k27 Entry Preparation by SSS Org.</div>
+    <div class="org-title">Sindh Superior Services Organisation</div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- ===================== LANDING / ENTRY FORM ===================== -->
+    <section id="screen-landing" class="card">
+      <div class="timer-chip">⏱ Duration: 100 Minutes</div>
+      <div class="qcount-badge">100 Questions</div>
+      <div class="meta-row">
+        <span class="pill">English</span>
+        <span class="pill">General Knowledge</span>
+        <span class="pill">General Science</span>
+        <span class="pill">Mathematics</span>
+      </div>
+      <p class="landing-note">
+        Enter your details and password to begin. Once started, the 100-minute timer cannot be paused.
+        Each question allows only one selection — choose carefully.
+      </p>
+
+      <div class="form-group">
+        <label for="cand-name">Full Name</label>
+        <input type="text" id="cand-name" placeholder="e.g. Ali Ahmed" autocomplete="off">
+        <div class="err-msg" id="err-name"></div>
+      </div>
+      <div class="form-group">
+        <label for="cand-district">District</label>
+        <input type="text" id="cand-district" placeholder="e.g. Jamshoro" autocomplete="off">
+        <div class="err-msg" id="err-district"></div>
+      </div>
+      <div class="form-group">
+        <label for="cand-password">Test Password</label>
+        <input type="password" id="cand-password" placeholder="Enter password" autocomplete="off">
+        <div class="err-msg" id="err-password"></div>
+      </div>
+
+      <button class="btn-primary" id="start-btn" onclick="startTest()">Start Test →</button>
+    </section>
+
+    <!-- ===================== TEST SCREEN ===================== -->
+    <section id="screen-test">
+      <div class="test-topbar">
+        <div class="candidate-chip">👤 <b id="topbar-name"></b> &nbsp;|&nbsp; 📍 <span id="topbar-district"></span></div>
+        <div id="timer-display">100:00</div>
+      </div>
+
+      <div id="sections-container"></div>
+
+      <div class="submit-area card" style="padding:22px;">
+        <div class="progress-label" id="progress-label">0 / 0 answered</div>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        <button class="btn-primary" id="submit-btn" onclick="submitTest()">Submit Test</button>
+      </div>
+    </section>
+
+    <!-- ===================== RESULT SCREEN ===================== -->
+    <section id="screen-result" class="card">
+      <div class="result-hero">
+        <div class="score-ring" id="score-ring" style="--pct:0;">
+          <div class="score-ring-inner">
+            <div class="big" id="result-score-text">0/0</div>
+            <div class="small">SCORE</div>
+          </div>
+        </div>
+        <div class="result-name" id="result-name"></div>
+        <div class="result-district" id="result-district"></div>
+      </div>
+      <div class="breakdown">
+        <div class="breakdown-title">Subject-wise Breakdown</div>
+        <div id="breakdown-list"></div>
+      </div>
+      <div class="recorded-banner">
+        <span class="recorded-icon">✓</span>
+        <span>Your response has been recorded successfully.<br>This test cannot be retaken on this device.</span>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>Reserved by Boostar Digital Agency &copy; 2026</footer>
+
+<script>
+  /* ===================================================================
+     QUESTION DATA — 100 MCQs across 4 sections
+     Add more by pushing objects into a subject's array; structure stays
+     the same. correctIndex is 0-based (0 = first option).
+  =================================================================== */
+  const TEST_DATA = {
+    "English": [
+      { q: "Choose the correct SYNONYM of: ABSCOND", options: ["Hide", "Flee", "Arrest", "Capture"], correctIndex: 1 },
+      { q: "Choose the correct SYNONYM of: ADEQUATE", options: ["Poor", "Extra", "Sufficient", "Excessive"], correctIndex: 2 },
+      { q: "Choose the correct SYNONYM of: DEFLECT", options: ["Attack", "Divert", "Continue", "Increase"], correctIndex: 1 },
+      { q: "Choose the correct SYNONYM of: DILIGENT", options: ["Careless", "Lazy", "Tired", "Hardworking"], correctIndex: 3 },
+      { q: "Choose the correct SYNONYM of: INTREPID", options: ["Fearful", "Weak", "Fearless", "Doubtful"], correctIndex: 2 },
+      { q: "Choose the correct SYNONYM of: RESILIENT", options: ["Rigid", "Fragile", "Flexible", "Stubborn"], correctIndex: 2 },
+      { q: "Choose the correct SYNONYM of: ACUTE", options: ["Dull", "Severe", "Ordinary", "Common"], correctIndex: 1 },
+      { q: "Choose the correct SYNONYM of: DEFERENCE", options: ["Insult", "Pride", "Respect", "Anger"], correctIndex: 2 },
+      { q: "Choose the correct SYNONYM of: PERSUADE", options: ["Reject", "Oppose", "Discourage", "Convince"], correctIndex: 3 },
+      { q: "Choose the correct SYNONYM of: DELINEATE", options: ["Confuse", "Ignore", "Describe", "Criticize"], correctIndex: 2 },
+      { q: "Choose the correct SYNONYM of: EVADE", options: ["Seize", "Attack", "Avoid", "Confront"], correctIndex: 2 },
+      { q: "Choose the correct SYNONYM of: GALLANT", options: ["Timid", "Brave", "Selfish", "Careless"], correctIndex: 1 },
+      { q: "Choose the correct SYNONYM of: IMMACULATE", options: ["Dirty", "Stained", "Ordinary", "Pure"], correctIndex: 3 },
+      { q: "Choose the correct SYNONYM of: NOTICEABLE", options: ["Hidden", "Prominent", "Minor", "Ordinary"], correctIndex: 1 },
+      { q: "Choose the correct SYNONYM of: PREVALENT", options: ["Uncommon", "Limited", "Widespread", "Scarce"], correctIndex: 2 },
+      { q: "Choose the correct ANTONYM of: CHERISH", options: ["Admire", "Discard", "Protect", "Value"], correctIndex: 1 },
+      { q: "Choose the correct ANTONYM of: FRAGILE", options: ["Delicate", "Weak", "Robust", "Breakable"], correctIndex: 2 },
+      { q: "Choose the correct ANTONYM of: RELUCTANT", options: ["Hesitant", "Unwilling", "Resistant", "Eager"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: GENEROUS", options: ["Helpful", "Kind", "Thoughtful", "Stingy"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: ARROGANT", options: ["Proud", "Haughty", "Pompous", "Humble"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: COMMENCE", options: ["Continue", "Proceed", "Conclude", "Begin"], correctIndex: 2 },
+      { q: "Choose the correct ANTONYM of: ELASTIC", options: ["Flexible", "Supple", "Yielding", "Rigid"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: TERMINATE", options: ["Stop", "End", "Halt", "Begin"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: HYPOCRITICAL", options: ["False", "Dishonest", "Insincere", "Sincere"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: DENOUNCE", options: ["Condemn", "Blame", "Criticize", "Commend"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: CONCEAL", options: ["Hide", "Cover", "Disclose", "Suppress"], correctIndex: 2 },
+      { q: "Choose the correct ANTONYM of: DEPRECIATE", options: ["Ignore", "Reject", "Appreciate", "Deny"], correctIndex: 2 },
+      { q: "Choose the correct ANTONYM of: EXPAND", options: ["Enlarge", "Extend", "Increase", "Contract"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: HECTIC", options: ["Busy", "Frantic", "Restless", "Calm"], correctIndex: 3 },
+      { q: "Choose the correct ANTONYM of: TIRELESS", options: ["Energetic", "Active", "Unfailing", "Exhausted"], correctIndex: 3 }
+    ],
+    "General Knowledge": [
+      { q: "How many permanent members of the United Nations Security Council hold veto power?", options: ["3", "4", "5", "6"], correctIndex: 2 },
+      { q: "Vienna city is located in ______.", options: ["Hungary", "Romania", "Austria", "Belgium"], correctIndex: 2 },
+      { q: "Lira is the currency of ______.", options: ["Italy", "Spain", "Türkiye", "Portugal"], correctIndex: 2 },
+      { q: "Pakistan tested its first nuclear bombs in ______.", options: ["Chagai", "Pokhran", "Kakul", "Abbottabad"], correctIndex: 0 },
+      { q: "Khalil-ul-Allah (Friend of Allah) is the title of:", options: ["Hazrat Ibrahim (A.S.)", "Hazrat Muhammad (S.A.W.)", "Hazrat Musa (A.S.)", "Hazrat Isa (A.S.)"], correctIndex: 0 },
+      { q: "Taj Mahal is located on the bank of River ______.", options: ["Yamuna", "Ganga", "Satlaj", "Ravi"], correctIndex: 0 },
+      { q: "Chittagong city is located in ______.", options: ["India", "Sri Lanka", "Bangladesh", "Nepal"], correctIndex: 2 },
+      { q: "Which of the following is the name of a Pakistani missile?", options: ["Shamshiri", "Hadri", "Akbari", "Ghauri"], correctIndex: 3 },
+      { q: "Akbar the Great Mughal Emperor was born in ______.", options: ["Umerkot", "Agra", "Lucknow", "Delhi"], correctIndex: 0 },
+      { q: "Operation Bunyan-un-Marsoos against India was launched in ______.", options: ["April 2025", "May 2025", "June 2025", "July 2025"], correctIndex: 1 },
+      { q: "Who wrote the poem 'The Neem Tree'?", options: ["Shah Abdul Latif Bhittai", "Allama Iqbal", "Elsa Qazi", "Faiz Ahmed Faiz"], correctIndex: 2 },
+      { q: "Karoonjhar Mountains are located in which district?", options: ["Hyderabad", "Tharparkar", "Sukkur", "Larkana"], correctIndex: 1 },
+      { q: "Benazir Bhutto was assassinated in ______.", options: ["2007", "2006", "2005", "2008"], correctIndex: 0 },
+      { q: "Peshawar is known as the:", options: ["City of Lights", "City of Flowers", "City of Gardens", "City of Saints"], correctIndex: 1 },
+      { q: "There are ______ Manzils in the Holy Quran.", options: ["5", "6", "7", "8"], correctIndex: 2 },
+      { q: "Mark Zuckerberg is associated with:", options: ["Oracle", "Apple", "Facebook", "Microsoft"], correctIndex: 2 },
+      { q: "Which famous Pakistani sportsperson received the Tamgha-e-Imtiaz (Sports) in March 2023?", options: ["Babar Azam", "Bismah Maroof", "Jahangir", "Jansher"], correctIndex: 0 },
+      { q: "CPEC has ______ major routes in Pakistan.", options: ["2", "3", "4", "5"], correctIndex: 1 },
+      { q: "How many colors are there in a rainbow?", options: ["3", "5", "7", "9"], correctIndex: 2 },
+      { q: "Which Surah of the Holy Quran contains 'Bismillah' twice?", options: ["Al-Nahl", "Al-Naml", "Al-Ahzab", "Al-Noor"], correctIndex: 1 }
+    ],
+    "General Science": [
+      { q: "Which metal is a good conductor of electricity?", options: ["Sulfur", "Silver", "Phosphorus", "Carbon"], correctIndex: 1 },
+      { q: "Which organ purifies blood in the human body?", options: ["Heart", "Lungs", "Kidneys", "Liver"], correctIndex: 2 },
+      { q: "The smallest unit of life is:", options: ["Tissue", "Cell", "Organ", "Nucleus"], correctIndex: 1 },
+      { q: "Solar energy is converted into chemical energy during:", options: ["Respiration", "Digestion", "Photosynthesis", "Transpiration"], correctIndex: 2 },
+      { q: "Which food is rich in carbohydrates?", options: ["Meat", "Eggs", "Rice", "Fish"], correctIndex: 2 },
+      { q: "Which instrument is used to measure body temperature?", options: ["Barometer", "Clinical thermometer", "Lactometer", "Hydrometer"], correctIndex: 1 },
+      { q: "The boiling point of water at standard pressure is:", options: ["0°C", "50°C", "100°C", "150°C"], correctIndex: 2 },
+      { q: "Deficiency of Vitamin D causes:", options: ["Scurvy", "Rickets", "Goiter", "Night blindness"], correctIndex: 1 },
+      { q: "The main function of red blood cells is to:", options: ["Fight germs", "Carry oxygen", "Digest food", "Produce hormones"], correctIndex: 1 },
+      { q: "Which color has the shortest wavelength?", options: ["Red", "Green", "Yellow", "Violet"], correctIndex: 3 },
+      { q: "Which part of blood helps in clotting?", options: ["Plasma", "Red blood cells", "Platelets", "White blood cells"], correctIndex: 2 },
+      { q: "Temperature in the SI system is measured in:", options: ["Celsius", "Fahrenheit", "Kelvin", "Centigrade"], correctIndex: 2 },
+      { q: "The SI unit of electric current is:", options: ["Coulomb", "Ampere", "Volt", "Ohm"], correctIndex: 1 },
+      { q: "Which gas is essential for respiration?", options: ["Nitrogen", "Carbon dioxide", "Oxygen", "Helium"], correctIndex: 2 },
+      { q: "The Earth revolves around the Sun in approximately:", options: ["24 hours", "30 days", "365 days", "12 months"], correctIndex: 2 },
+      { q: "A keyboard is an example of:", options: ["Output device", "Input device", "Storage device", "Processing device"], correctIndex: 1 },
+      { q: "One kilobyte (KB) is equal to:", options: ["100 bytes", "1000 bytes", "1024 bytes", "2048 bytes"], correctIndex: 2 },
+      { q: "Which planet is known as the Morning Star?", options: ["Mercury", "Venus", "Mars", "Saturn"], correctIndex: 1 },
+      { q: "Which part of the plant prepares food?", options: ["Root", "Stem", "Leaf", "Flower"], correctIndex: 2 },
+      { q: "Which scientist discovered gravity?", options: ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Thomas Edison"], correctIndex: 1 }
+    ],
+    "Mathematics": [
+      { q: "60 is 40% of what number?", options: ["120", "150", "160", "180"], correctIndex: 1 },
+      { q: "Increase 160 by 15%.", options: ["176", "180", "184", "188"], correctIndex: 2 },
+      { q: "If an item originally priced at $120 is discounted by 25%, what is the discounted price?", options: ["$85", "$90", "$95", "$100"], correctIndex: 1 },
+      { q: "50 is what percentage of 250?", options: ["20%", "25%", "15%", "30%"], correctIndex: 0 },
+      { q: "A store advertises a 30% discount on a smartphone priced at $800. What do you pay?", options: ["$540", "$500", "$560", "$370"], correctIndex: 2 },
+      { q: "Decrease 450 by 20%.", options: ["340", "350", "360", "370"], correctIndex: 2 },
+      { q: "Ali has 180 marbles. He gives away 15%. How many does he give?", options: ["25", "27", "30", "32"], correctIndex: 1 },
+      { q: "A town's population is 60,000 and increases by 35%. What is the new population?", options: ["81,000", "78,000", "85,000", "90,000"], correctIndex: 0 },
+      { q: "A bottle contains 65% of 2 liters. How much water is inside?", options: ["1.2 L", "1.3 L", "1.4 L", "1.5 L"], correctIndex: 1 },
+      { q: "Out of 400 students, 35% passed. How many failed?", options: ["140", "260", "240", "280"], correctIndex: 1 },
+      { q: "A jacket priced at Rs. 8400 is sold with a 25% discount. What is the sold price?", options: ["Rs. 6100", "Rs. 6200", "Rs. 6300", "Rs. 6400"], correctIndex: 2 },
+      { q: "A watch is sold for Rs. 4500 after a 25% discount. What was the original price?", options: ["Rs. 5500", "Rs. 6000", "Rs. 5800", "Rs. 6500"], correctIndex: 1 },
+      { q: "A book of Rs. 2500 is decreased by 30%. What is the new price?", options: ["Rs. 1800", "Rs. 1750", "Rs. 1650", "Rs. 1850"], correctIndex: 1 },
+      { q: "A class has 60 students, 3/5 are girls. How many are boys?", options: ["36", "24", "30", "20"], correctIndex: 1 },
+      { q: "A earns 25% less than B. What percentage is B's income more than A's?", options: ["25%", "33.33%", "20%", "40%"], correctIndex: 1 },
+      { q: "A student scores 65% and 85% in two exams. What is the average?", options: ["75%", "72.5%", "77.5%", "80%"], correctIndex: 0 },
+      { q: "20% of a number is 18. What is 50% of that number?", options: ["36", "45", "54", "60"], correctIndex: 1 },
+      { q: "Salary increases by 20% then decreases by 10%. What is the net change?", options: ["10% increase", "8% increase", "5% increase", "2% decrease"], correctIndex: 1 },
+      { q: "A bicycle is sold for Rs. 7200 after a 10% discount. What was the original price?", options: ["Rs. 7800", "Rs. 8000", "Rs. 8200", "Rs. 8500"], correctIndex: 1 },
+      { q: "45% of a class are girls. Total strength is 40. How many boys?", options: ["18", "22", "20", "24"], correctIndex: 1 },
+      { q: "Ali's age after 15 years will be five times his age 5 years back. What is his present age?", options: ["15", "10", "20", "8"], correctIndex: 1 },
+      { q: "A is two years older than B, B is twice as old as C. The total age of A, B, and C is 27. What is the age of B?", options: ["5", "12", "20", "10"], correctIndex: 3 },
+      { q: "Ten years ago, A was twice B's age. If the ratio of their present ages is 3:4, what is the total of their present ages?", options: ["84 years", "10 years", "60 years", "48 years"], correctIndex: 0 },
+      { q: "The sum of the ages of a father and son is 60 years. If the father is 4 times as old as his son, what are their respective ages?", options: ["12 and 48", "15 and 45", "20 and 40", "10 and 50"], correctIndex: 0 },
+      { q: "The ages of A and B are in the ratio 5:7. Four years later, the ratio of their ages will be 3:4. What are their present ages?", options: ["10 and 14", "15 and 21", "20 and 28", "25 and 35"], correctIndex: 2 },
+      { q: "y is the sum of two quantities, one of which varies directly as x and the other varies inversely as x. When x = 1, y = 6, and when x = 2, y = 6. Find the value of y when x = 4.", options: ["7.5", "8", "8.5", "9"], correctIndex: 2 },
+      { q: "If x varies directly as the square of y and inversely as z, and when y is doubled and z is halved, the new value of x becomes k times the original value. What is the value of k?", options: ["2", "4", "8", "16"], correctIndex: 2 },
+      { q: "The cost of notebooks varies directly with the number of notebooks purchased. If 5 notebooks cost Rs. 150, how much will 12 notebooks cost?", options: ["Rs. 300", "Rs. 360", "Rs. 400", "Rs. 420"], correctIndex: 1 },
+      { q: "It takes 4 workers 6 hours to build a wall. If the number of workers is increased to 8, how many hours will it take to build the same wall, assuming they work at the same rate?", options: ["2 hours", "3 hours", "4 hours", "12 hours"], correctIndex: 1 },
+      { q: "If a varies jointly as b and c, and a = 30 when b = 2 and c = 3, find the constant of variation k.", options: ["5", "6", "10", "15"], correctIndex: 0 }
+    ]
+  };
+
+  const TOTAL_MINUTES = 100;
+  const TEST_PASSWORD = "SSSORG2026";
+  let timeRemaining = TOTAL_MINUTES * 60;
+  let timerInterval = null;
+  let candidateName = "";
+  let candidateDistrict = "";
+
+  // userAnswers["Subject"][questionIndex] = selectedOptionIndex
+  const userAnswers = {};
+  let totalQuestions = 0;
+
+  const SUBMIT_LOCK_KEY = "sss_uos_2k27_submitted";
+
+  /* ---------------- One-attempt lock (same browser/device) ---------------- */
+  function checkAlreadySubmitted(){
+    try{
+      const saved = localStorage.getItem(SUBMIT_LOCK_KEY);
+      if(saved){
+        const data = JSON.parse(saved);
+        showAlreadySubmittedScreen(data);
+        return true;
+      }
+    }catch(e){ /* localStorage unavailable, allow test to proceed */ }
+    return false;
+  }
+
+  function lockSubmission(payload){
+    try{
+      localStorage.setItem(SUBMIT_LOCK_KEY, JSON.stringify(payload));
+    }catch(e){ /* ignore if storage blocked */ }
+  }
+
+  function escapeHtml(str){
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  /* ---------------- Google Sheet recording ----------------
+     1. Create a Google Sheet.
+     2. Extensions > Apps Script, paste the provided script, deploy as Web App.
+     3. Paste the deployment URL below as SHEET_WEBHOOK_URL.
+     If left blank, this silently does nothing (test still works normally).
+  ------------------------------------------------------------- */
+  const SHEET_WEBHOOK_URL = ""; // <-- paste your Google Apps Script Web App URL here
+
+  function sendRecordToSheet(payload){
+    if(!SHEET_WEBHOOK_URL) return; // not configured yet, skip silently
+    try{
+      fetch(SHEET_WEBHOOK_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify(payload)
+      }).catch(() => { /* network issue - ignore, don't block the candidate */ });
+    }catch(e){ /* ignore */ }
+  }
+
+  function showAlreadySubmittedScreen(data){
+    document.getElementById('screen-landing').style.display = 'none';
+    document.getElementById('screen-test').style.display = 'none';
+    document.getElementById('screen-result').style.display = 'none';
+
+    const lockedDiv = document.createElement('section');
+    lockedDiv.className = 'card';
+    lockedDiv.style.marginTop = '-22px';
+    lockedDiv.style.padding = '34px 24px';
+    lockedDiv.style.textAlign = 'center';
+
+    if(data.invalidated){
+      lockedDiv.innerHTML = `
+        <div style="font-size:2.4rem; margin-bottom:8px;">⏰</div>
+        <div style="font-weight:800; font-size:1.15rem; color:var(--red); margin-bottom:8px;">
+          This test session has ended
+        </div>
+        <div style="color:var(--ink-soft); font-size:0.9rem; line-height:1.6; margin-bottom:18px;">
+          ${data.name ? `<b>${escapeHtml(data.name)}</b>` : 'Your previous session'}
+          ${data.district ? ` from <b>${escapeHtml(data.district)}</b>` : ''} ran out of time on this device.<br>
+          The test cannot be retaken here.
+        </div>
+        <div style="font-size:0.8rem; color:var(--ink-soft);">
+          Each candidate is allowed only one attempt. If you believe this is an error, please contact the test administrator.
+        </div>
+      `;
+    } else {
+      lockedDiv.innerHTML = `
+        <div style="font-size:2.4rem; margin-bottom:8px;">🔒</div>
+        <div style="font-weight:800; font-size:1.15rem; color:var(--red); margin-bottom:8px;">
+          You've already submitted this test
+        </div>
+        <div style="color:var(--ink-soft); font-size:0.9rem; line-height:1.6; margin-bottom:18px;">
+          ${data.name ? `Submitted by <b>${escapeHtml(data.name)}</b>` : 'This test was already completed'}
+          ${data.district ? ` from <b>${escapeHtml(data.district)}</b>` : ''} on this device.<br>
+          Score: <b>${data.score}/${data.totalQuestions}</b>
+        </div>
+        <div style="font-size:0.8rem; color:var(--ink-soft);">
+          Each candidate is allowed only one attempt. If you believe this is an error, please contact the test administrator.
+        </div>
+      `;
+    }
+    document.querySelector('.wrap').appendChild(lockedDiv);
+  }
+
+  // Run lock-check immediately on page load
+  let alreadyLocked = false;
+  document.addEventListener('DOMContentLoaded', () => {
+    alreadyLocked = checkAlreadySubmitted();
+  });
+
+  /* ---------------- Landing form validation ---------------- */
+  function startTest(){
+    if(alreadyLocked) return;
+
+    const nameInput = document.getElementById('cand-name');
+    const distInput = document.getElementById('cand-district');
+    const passInput = document.getElementById('cand-password');
+    const errName = document.getElementById('err-name');
+    const errDistrict = document.getElementById('err-district');
+    const errPassword = document.getElementById('err-password');
+
+    let valid = true;
+    errName.textContent = "";
+    errDistrict.textContent = "";
+    errPassword.textContent = "";
+
+    if(nameInput.value.trim().length < 2){
+      errName.textContent = "Please enter your full name.";
+      valid = false;
+    }
+    if(distInput.value.trim().length < 2){
+      errDistrict.textContent = "Please enter your district.";
+      valid = false;
+    }
+    if(passInput.value.trim() !== TEST_PASSWORD){
+      errPassword.textContent = "Incorrect password. Please check and try again.";
+      valid = false;
+    }
+    if(!valid) return;
+
+    candidateName = nameInput.value.trim();
+    candidateDistrict = distInput.value.trim();
+
+    document.getElementById('topbar-name').textContent = candidateName;
+    document.getElementById('topbar-district').textContent = candidateDistrict;
+
+    // Record that this candidate has started the test
+    sendRecordToSheet({
+      name: candidateName,
+      district: candidateDistrict,
+      score: "Started (in progress)",
+      total: totalQuestions || 100,
+      submittedAt: new Date().toISOString()
+    });
+
+    buildTestUI();
+    document.getElementById('screen-landing').style.display = 'none';
+    document.getElementById('screen-test').style.display = 'block';
+    window.scrollTo({top:0, behavior:'smooth'});
+    startTimer();
+  }
+
+  /* ---------------- Build question sections ---------------- */
+  function buildTestUI(){
+    const container = document.getElementById('sections-container');
+    container.innerHTML = "";
+    totalQuestions = 0;
+
+    Object.keys(TEST_DATA).forEach(subject => {
+      const questions = TEST_DATA[subject];
+      userAnswers[subject] = new Array(questions.length).fill(null);
+      totalQuestions += questions.length;
+
+      const sectionEl = document.createElement('div');
+      sectionEl.className = 'subject-section';
+      sectionEl.innerHTML = `
+        <div class="subject-header">
+          <span>${subject}</span>
+          <span class="subject-count">${questions.length} Questions</span>
+        </div>
+        <div class="questions-box" id="qbox-${subject.replace(/\s+/g,'-')}"></div>
+      `;
+      container.appendChild(sectionEl);
+
+      const qbox = sectionEl.querySelector(`#qbox-${subject.replace(/\s+/g,'-')}`);
+      questions.forEach((qObj, qIndex) => {
+        const qCard = document.createElement('div');
+        qCard.className = 'q-card';
+        qCard.style.animationDelay = (Math.min(qIndex, 10) * 0.04) + 's';
+
+        const optionsHTML = qObj.options.map((optText, optIndex) => `
+          <div class="option"
+               data-subject="${subject}"
+               data-qindex="${qIndex}"
+               data-optindex="${optIndex}"
+               onclick="selectOption(this)">
+            <span>${optText}</span>
+          </div>
+        `).join("");
+
+        qCard.innerHTML = `
+          <div class="q-label">
+            <span class="q-num">Q${qIndex+1}</span>
+            <span class="q-text">${qObj.q}</span>
+          </div>
+          <div class="options">${optionsHTML}</div>
+        `;
+        qbox.appendChild(qCard);
+      });
+    });
+
+    updateProgress();
+  }
+
+  /* ---------------- Option click handler ---------------- */
+  function selectOption(el){
+    const subject = el.dataset.subject;
+    const qIndex = parseInt(el.dataset.qindex);
+    const optIndex = parseInt(el.dataset.optindex);
+
+    // Already answered? lock it — no changes allowed
+    if(userAnswers[subject][qIndex] !== null) return;
+
+    const correctIndex = TEST_DATA[subject][qIndex].correctIndex;
+    const allOptions = el.parentElement.querySelectorAll('.option');
+
+    userAnswers[subject][qIndex] = optIndex;
+
+    allOptions.forEach(opt => {
+      const oi = parseInt(opt.dataset.optindex);
+      opt.classList.add('locked');
+      if(oi === optIndex){
+        opt.classList.add(oi === correctIndex ? 'selected-correct' : 'selected-wrong');
+      } else if(oi === correctIndex && optIndex !== correctIndex){
+        opt.classList.add('reveal-correct');
+      } else {
+        opt.classList.add('dimmed');
+      }
+    });
+
+    updateProgress();
+  }
+
+  /* ---------------- Progress bar ---------------- */
+  function updateProgress(){
+    let answered = 0;
+    Object.values(userAnswers).forEach(arr => {
+      answered += arr.filter(a => a !== null).length;
+    });
+    const pct = totalQuestions === 0 ? 0 : Math.round((answered/totalQuestions)*100);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-label').textContent = `${answered} / ${totalQuestions} answered`;
+  }
+
+  /* ---------------- Timer ---------------- */
+  function startTimer(){
+    updateTimerDisplay();
+    timerInterval = setInterval(() => {
+      timeRemaining--;
+      updateTimerDisplay();
+      if(timeRemaining <= 0){
+        clearInterval(timerInterval);
+        handleTimeUp();
+      }
+    }, 1000);
+  }
+
+  function updateTimerDisplay(){
+    const mins = Math.floor(timeRemaining/60);
+    const secs = timeRemaining % 60;
+    const display = document.getElementById('timer-display');
+    display.textContent = `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+    if(timeRemaining <= 300){ // last 5 minutes
+      display.classList.add('low');
+    }
+  }
+
+  /* ---------------- Time's up: invalidate, no score given ---------------- */
+  function handleTimeUp(){
+    document.getElementById('screen-test').style.display = 'none';
+
+    // Lock this device permanently — no retake, no score
+    lockSubmission({
+      name: candidateName,
+      district: candidateDistrict,
+      score: null,
+      totalQuestions: totalQuestions,
+      invalidated: true,
+      submittedAt: new Date().toISOString()
+    });
+
+    sendRecordToSheet({
+      name: candidateName,
+      district: candidateDistrict,
+      score: "Time Up - Invalid",
+      total: totalQuestions
+    });
+
+    const wrap = document.querySelector('.wrap');
+    const invalidDiv = document.createElement('section');
+    invalidDiv.className = 'card';
+    invalidDiv.style.marginTop = '-22px';
+    invalidDiv.style.padding = '34px 24px';
+    invalidDiv.style.textAlign = 'center';
+    invalidDiv.innerHTML = `
+      <div style="font-size:2.4rem; margin-bottom:8px;">⏰</div>
+      <div style="font-weight:800; font-size:1.15rem; color:var(--red); margin-bottom:8px;">
+        Time's up — test ended
+      </div>
+      <div style="color:var(--ink-soft); font-size:0.9rem; line-height:1.6; margin-bottom:18px;">
+        The 100-minute time limit has been reached, ${escapeHtml(candidateName)}.<br>
+        This test session is now closed and cannot be retaken on this device.
+      </div>
+      <div style="font-size:0.8rem; color:var(--ink-soft);">
+        Please contact the test administrator if you have any questions.
+      </div>
+    `;
+    wrap.appendChild(invalidDiv);
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  /* ---------------- Submit & Scoring (manual submit only) ---------------- */
+  function submitTest(){
+    clearInterval(timerInterval);
+
+    let totalCorrect = 0;
+    const subjectResults = {};
+
+    Object.keys(TEST_DATA).forEach(subject => {
+      const questions = TEST_DATA[subject];
+      let correct = 0;
+      questions.forEach((qObj, qIndex) => {
+        if(userAnswers[subject][qIndex] === qObj.correctIndex){
+          correct++;
+        }
+      });
+      subjectResults[subject] = { correct, total: questions.length };
+      totalCorrect += correct;
+    });
+
+    showResult(totalCorrect, totalQuestions, subjectResults);
+  }
+
+  function showResult(totalCorrect, totalQ, subjectResults){
+    document.getElementById('screen-test').style.display = 'none';
+    document.getElementById('screen-result').style.display = 'block';
+    window.scrollTo({top:0, behavior:'smooth'});
+
+    // Lock this device so the test cannot be retaken
+    lockSubmission({
+      name: candidateName,
+      district: candidateDistrict,
+      score: totalCorrect,
+      totalQuestions: totalQ,
+      submittedAt: new Date().toISOString()
+    });
+
+    sendRecordToSheet({
+      name: candidateName,
+      district: candidateDistrict,
+      score: totalCorrect,
+      total: totalQ,
+      subjectBreakdown: Object.keys(subjectResults).map(s => `${s}: ${subjectResults[s].correct}/${subjectResults[s].total}`).join(" | "),
+      submittedAt: new Date().toISOString()
+    });
+
+    document.getElementById('result-name').textContent = candidateName;
+    document.getElementById('result-district').textContent = candidateDistrict;
+
+    const pct = totalQ === 0 ? 0 : Math.round((totalCorrect/totalQ)*100);
+    document.getElementById('result-score-text').textContent = `${totalCorrect}/${totalQ}`;
+    document.getElementById('score-ring').style.setProperty('--pct', pct);
+
+    const breakdownList = document.getElementById('breakdown-list');
+    breakdownList.innerHTML = "";
+    Object.keys(subjectResults).forEach(subject => {
+      const { correct, total } = subjectResults[subject];
+      const subPct = total === 0 ? 0 : Math.round((correct/total)*100);
+      const row = document.createElement('div');
+      row.className = 'breakdown-row';
+      row.innerHTML = `
+        <div class="breakdown-subject">${subject}</div>
+        <div class="breakdown-bar-track"><div class="breakdown-bar-fill" style="width:0%" data-w="${subPct}"></div></div>
+        <div class="breakdown-score">${correct}/${total}</div>
+      `;
+      breakdownList.appendChild(row);
+    });
+
+    // trigger bar fill animation after render
+    setTimeout(() => {
+      document.querySelectorAll('.breakdown-bar-fill').forEach(bar => {
+        bar.style.width = bar.dataset.w + '%';
+      });
+    }, 50);
+  }
+</script>
+
+</body>
+</html>
